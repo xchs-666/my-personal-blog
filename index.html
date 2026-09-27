@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Blog</title>
-  <style>
-    body { font-family: Arial; background: #f9f9f9; padding: 20px; }
-    h1 { color: green; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>你的名字 — 计算机专业学生</title>
+  <meta name="description" content="计算机专业大三学生的个人主页，展示课程项目与练手作品。">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <h1>Hello, this is my personal blog!</h1>
-  <p>Hi, I'm a third-year CS student and this is my first project.</p>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- NAV: 三页保持一致 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">你的名字</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">切换导航菜单</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">首页</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="contact.html">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>你好，我是<b>你的名字</b></h1>
+          <p class="hero-lead">
+            计算机专业大三学生。这是我第一个真正部署上线的项目 ——
+            之前写的东西都只躺在本地文件夹里，这次我想把从写代码到上线的完整流程走一遍。
+          </p>
+          <div class="btn-row">
+            <a class="btn" href="#projects">看看我的项目</a>
+            <a class="btn btn-ghost" href="contact.html">联系我</a>
+          </div>
+        </div>
+        <!-- 用首字母代替照片，这样第一版不需要任何图片文件。以后换成 <img> 即可。 -->
+        <div class="avatar" aria-hidden="true">名字</div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>项目</h2>
+        <p class="section-lead">三个我做过的、最能说明问题的东西。都是小项目，但每个都有点值得说的地方。</p>
+
+        <div class="project-grid">
+          <!-- TODO: 换成你真实的项目 -->
+          <article class="project-card">
+            <h3>项目名称一</h3>
+            <p>一句话说清它解决什么问题，再加一句技术上最有意思的点。比如「用哈希表把查找从 O(n) 降到 O(1)」。</p>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Flask</li>
+            </ul>
+            <p class="card-links">
+              <!-- TODO: 真实演示地址 -->
+              <a href="#">在线演示</a>
+              <!-- TODO: 真实仓库地址 -->
+              <a href="#">源码</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>项目名称二</h3>
+            <p>一句话说清它解决什么问题，再加一句技术上最有意思的点。</p>
+            <ul class="tag-list">
+              <li class="tag">Java</li>
+              <li class="tag">MySQL</li>
+            </ul>
+            <p class="card-links">
+              <a href="#">在线演示</a>
+              <a href="#">源码</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>项目名称三</h3>
+            <p>一句话说清它解决什么问题，再加一句技术上最有意思的点。</p>
+            <ul class="tag-list">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+            <p class="card-links">
+              <a href="#">在线演示</a>
+              <a href="#">源码</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface">
+      <div class="container">
+        <h2>最近在学什么</h2>
+        <p>
+          <!-- TODO: 换成你真实的近况 -->
+          数据结构与算法还在补，同时在啃操作系统。前端这边刚把 CSS Grid 和 Flexbox 弄明白，
+          这个站点就是练手的结果。下一步想把后端也跑通，做一个真正有数据库的项目。
+        </p>
+        <p><a href="about.html">关于我的更多信息 →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: 三页保持一致 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 你的名字</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/xchs-666">GitHub</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

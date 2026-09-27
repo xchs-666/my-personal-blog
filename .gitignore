@@ -1,0 +1,13 @@
+# Windows / macOS 会自动生成的垃圾文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 如果以后加了构建步骤或者本地服务器，把产物也忽略掉
+_site/
+node_modules/

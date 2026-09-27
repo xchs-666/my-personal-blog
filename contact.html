@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>联系 — 你的名字</title>
+  <meta name="description" content="通过邮箱或 GitHub 联系你的名字。">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- NAV: 三页保持一致 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">你的名字</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">切换导航菜单</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="contact.html" aria-current="page">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>联系我</h1>
+        <p class="muted">
+          邮件我一般两三天内会回。如果是为了课程项目或者实习机会，直接说就好。
+        </p>
+
+        <!--
+          这里没有留言表单 —— 静态站点收不到表单提交，
+          放一个点了没反应的表单比不放更糟。
+          直接给邮箱和主页链接是更实在的做法。
+        -->
+        <ul class="contact-list">
+          <li>
+            <!-- TODO: 换成你的邮箱。
+                 提醒：明文邮箱放在公开页面上会被爬虫抓。建议用专门的邮箱地址，
+                 或者只留 GitHub 链接。 -->
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
+            <p class="muted">邮箱</p>
+          </li>
+          <li>
+            <!-- TODO: 换成你的 GitHub 主页 -->
+            <a href="https://github.com/xchs-666">github.com/xchs-666</a>
+            <p class="muted">代码都在这里</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: 三页保持一致 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 你的名字</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/xchs-666">GitHub</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

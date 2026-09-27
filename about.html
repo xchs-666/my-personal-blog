@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关于 — 你的名字</title>
+  <meta name="description" content="关于你的名字：计算机专业大三学生，正在学习什么、做过什么。">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- NAV: 三页保持一致 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">你的名字</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">切换导航菜单</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html" aria-current="page">关于</a></li>
+          <li><a href="contact.html">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>关于我</h1>
+
+        <!-- TODO: 全部换成你自己的话。别写得像简历模板，具体一点。 -->
+        <p>
+          我是你的名字，计算机专业大三学生。目前为止我大部分时间花在课堂作业上，
+          真正自己从头做完、还部署上线的项目不多 —— 这个站点就是其中一个。
+        </p>
+        <p>
+          我对后端的兴趣比前端大一些，喜欢琢磨「这个东西内部到底怎么跑起来的」。
+          最近在重学数据结构和操作系统，因为发现自己之前只是会用来应付考试，
+          真要解释清楚反而说不明白。
+        </p>
+        <p>
+          写代码之外，我喜欢把学到的东西讲给别人听 —— 讲不清楚通常意味着我自己也没真懂。
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-surface">
+      <div class="container">
+        <h2>技能</h2>
+        <p class="section-lead">按「用过 / 正在学」分组，不标百分比 —— 那个数字没有意义。</p>
+
+        <!-- TODO: 换成你真实学过的语言和工具，不会的就别写 -->
+        <h3>语言</h3>
+        <ul class="tag-list">
+          <li class="tag">C</li>
+          <li class="tag">Java</li>
+          <li class="tag">Python</li>
+          <li class="tag">SQL</li>
+        </ul>
+
+        <h3>工具与框架</h3>
+        <ul class="tag-list">
+          <li class="tag">Git</li>
+          <li class="tag">Linux 命令行</li>
+          <li class="tag">MySQL</li>
+          <li class="tag">Flask</li>
+        </ul>
+
+        <h3>正在学</h3>
+        <ul class="tag-list">
+          <li class="tag">数据结构与算法</li>
+          <li class="tag">操作系统</li>
+          <li class="tag">HTML / CSS / JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>时间线</h2>
+        <!-- TODO: 换成你真实的经历，3~5 条即可。一条一行，不要写成长段落。 -->
+        <ul class="tag-list">
+          <li class="tag">2023 — 进入大学，第一次写 C 语言</li>
+          <li class="tag">2024 — 学了 Java 和数据库，做了第一个带界面的课设</li>
+          <li class="tag">2025 — 开始接触 Linux 和 Git，把作业都放进了仓库</li>
+          <li class="tag">2026 — 做了这个站点，第一次把东西真正部署到公网</li>
+        </ul>
+
+        <div class="btn-row">
+          <a href="contact.html">想聊聊？给我发消息 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: 三页保持一致 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 你的名字</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/xchs-666">GitHub</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

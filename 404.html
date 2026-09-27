@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>页面不存在 — 你的名字</title>
+  <meta name="description" content="没有找到这个页面。">
+  <!--
+    这一行是 404 页独有的，别的页面都不需要。
+    GitHub Pages 对任何找不到的地址都返回这个文件，但浏览器地址栏里
+    还留着那个深层地址（比如 /my-personal-blog/blog/post）。
+    没有这个 <base>，下面的 styles/main.css 就会解析成
+    /my-personal-blog/blog/styles/main.css，结果 404 页面自己反而是没样式的。
+    <base> 让所有相对地址都从仓库根目录算起。
+    改仓库名的话，这里要跟着改。
+  -->
+  <base href="/my-personal-blog/">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- NAV: 三页保持一致 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">你的名字</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">切换导航菜单</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="contact.html">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>404</h1>
+        <p class="muted">没有找到这个页面。可能是地址打错了，或者这个页面已经被删掉了。</p>
+        <div class="btn-row">
+          <a class="btn" href="index.html">回首页</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: 三页保持一致 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 你的名字</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/xchs-666">GitHub</a></li>
+        <li><a href="contact.html">联系</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
