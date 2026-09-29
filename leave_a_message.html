@@ -76,7 +76,7 @@
       form.reset();
 
       // 保存留言到 local storage（这是“保存”的方式，但 GitHub 不保存）
-      localStorage.setItem('messages', JSON.stringify([...JSON.parse(localStorage.getItem('messages') || '[]'), { name, message }]);
+      localStorage.setItem('messages', JSON.stringify([...JSON.parse(localStorage.getItem('messages') || '[]'), { name, message }]));
     });
 
     // 页面加载时读取留言
